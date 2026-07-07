@@ -1,2 +1,2 @@
-# explainable_ML_consensus_framework
-An explainable machine learning consensus framework for robust estimations of environmental effects on population dynamics
+# An explainable machine learning consensus framework for robust estimations of environmental effects on population dynamics
+This repository contains scripts to implement explainable machine learning consensus framework - explanation discrepancy framework (EDF) for robust estimations of environmental effects on population dynamics.
