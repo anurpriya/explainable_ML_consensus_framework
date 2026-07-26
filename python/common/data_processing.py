@@ -1,10 +1,30 @@
 import pandas as pd
+import numpy as np
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 def process_data():
-    
+    df = prepare_dataset()
+    return split_and_scale_data(df)
+
+def process_perturbed_data(random_seed):
+    df = prepare_dataset()
+
+    np.random.seed(random_seed)
+    noise = np.random.normal(
+    loc = 0,
+    scale = 2.77,
+    size = len(df)
+    )
+
+    df_perturbed = df.copy()
+    df_perturbed["mean_hcc"] = df_perturbed["mean_hcc"] + noise
+
+    return split_and_scale_data(df_perturbed)
+
+
+def prepare_dataset():
     df = pd.read_csv("../data/only_cyc.csv")
     df = df[df["survey_depth"] == 10].copy() # Considered one of the depths, depth = 10m
 
@@ -18,7 +38,10 @@ def process_data():
     df['cyc_lag2'] = df.groupby(['site_name'])['cyc_dis'].shift(2)
     df['dhw_lag2'] = df.groupby(['site_name'])['dhw_dis'].shift(2)
     df['other_lag2'] = df.groupby(['site_name'])['other_dis'].shift(2)
+ 
+    return df
 
+def split_and_scale_data(df):
     trainval = df[df['year'].between(1,29)].copy()
     test  = df[df['year']==30].copy()
 
@@ -57,3 +80,4 @@ def process_data():
     X_test_scaled  = pd.DataFrame(X_test_scaled, columns=covariates, index=X_test.index)
 
     return (train, test, y_train, y_test, X_train_scaled, X_test_scaled)
+

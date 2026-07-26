@@ -1,6 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import lime
+import lime.lime_tabular
+
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, root_mean_squared_error,mean_absolute_percentage_error
+from lime.lime_tabular import LimeTabularExplainer 
 
 
 def plot_prd_vs_obs(y_train, Predictions_train, y_test, Predictions_test):
@@ -27,7 +31,7 @@ def plot_prd_vs_obs(y_train, Predictions_train, y_test, Predictions_test):
     plt.grid(True)
 
     plt.tight_layout()
-    plt.show()
+    # plt.show()
 
 
 
@@ -48,7 +52,18 @@ def calculate_performance_metrics (y_train, Predictions_train, y_test, Predictio
     print(f"Training-> MAPE: {train_mape}, RMSE: {train_rmse}, MSE: {train_mse}, MAE: {train_mae}, R_2: {train_r2_score}")    
     print(f"Test -> MAPE: {test_mape}, RMSE: {test_rmse}, MSE: {test_mse}, MAE: {test_mae},  R_2: {test_r2_score}")
 
-
+    return{
+        "Train_MAPE": train_mape,
+        "Train_RMSE": train_rmse,
+        "Train_MSE": train_mse,
+        "Train_MAE": train_mae,
+        "Train_R2": train_r2_score,
+        "Test_MAPE": test_mape,
+        "Test_RMSE": test_rmse,
+        "Test_MSE": test_mse,
+        "Test_MAE": test_mae,
+        "Test_R2": test_r2_score
+    }
 
 def get_feature_names(columns):
     rename_dict = {
@@ -69,6 +84,26 @@ def get_feature_names(columns):
     feature_names = [rename_dict.get(col, col) for col in columns]
     print(feature_names)
     return feature_names
+
+
+def get_lime_explanation(idx, training_data, feature_names, model):
+    explainer = lime.lime_tabular.LimeTabularExplainer(
+        training_data=training_data.to_numpy(),
+        feature_names=feature_names,
+        mode="regression",
+        discretize_continuous=False,
+        random_state=42
+    )
+
+    exp = explainer.explain_instance(
+        training_data.iloc[idx].to_numpy(),
+        model.predict,
+        num_features=12
+    )
+    return exp
+
+
+
 
 
 
