@@ -12,17 +12,6 @@ This code is provided as supplementary information to the paper,
 Anuradha Dhananjanie, Helen Thompson, Julie Vercelloni, David J Warne. An explainable machine learning consensus framework for robust estimations of environmental effects on population dynamics. https://doi.org/10.64898/2026.05.10.724190.
 
 ## Contents
-The directory structure is as follows
-|-- startup.m                                  Adds all functions to the MATLAB Path
-|-- src/
-    |-- CNLL.m                                 Carpenter model negative log likelihood function
-    |-- find_equilibrium.m                     Identifiy Carpenter model equilibrium points 
-    |-- nutrientcon.m                          RHS of Carpenter model
-    |-- Profiles_likelihoods.m                 Computer univariate profile likelihhod curves
-|-- Scenarios/
-    |-- Scenario1_Identifiability_Analysis_Carpenter_Model.m    Analysis of stable system
-    |-- Scenario2_Identifiability_Analysis_Carpenter_Model.m    Analysis of bistable system observed close to the tipping point 
-    |-- Scenario3_Identifiability_Analysis_Carpenter_Model.m    Analysis of bistable system observed far from the tipping point
 
     
 ## Usage
