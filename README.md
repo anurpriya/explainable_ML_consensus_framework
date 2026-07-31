@@ -11,9 +11,20 @@ Anuradha Dhananjanie$^{1, 2}$ anuradha.dewage@hdr.qut.edu.au
 This code is provided as supplementary information to the paper,
 Anuradha Dhananjanie, Helen Thompson, Julie Vercelloni, David J Warne. An explainable machine learning consensus framework for robust estimations of environmental effects on population dynamics. https://doi.org/10.64898/2026.05.10.724190.
 
-##
-Contents
+## Contents
+The directory structure is as follows
+|-- startup.m                                  Adds all functions to the MATLAB Path
+|-- src/
+    |-- CNLL.m                                 Carpenter model negative log likelihood function
+    |-- find_equilibrium.m                     Identifiy Carpenter model equilibrium points 
+    |-- nutrientcon.m                          RHS of Carpenter model
+    |-- Profiles_likelihoods.m                 Computer univariate profile likelihhod curves
+|-- Scenarios/
+    |-- Scenario1_Identifiability_Analysis_Carpenter_Model.m    Analysis of stable system
+    |-- Scenario2_Identifiability_Analysis_Carpenter_Model.m    Analysis of bistable system observed close to the tipping point 
+    |-- Scenario3_Identifiability_Analysis_Carpenter_Model.m    Analysis of bistable system observed far from the tipping point
 
+    
 ## Usage
 1. Start R and browse to the repository folder explainable_ML_consensus_framework/R
 3. Run synthetic_data_generation.R. This generates the required simulated data for the analysis. The dataset "only_cyc.csv" generated from this code contains the row disturbance values and the associated mean hard coral cover. This data set can also be found in the data folder
