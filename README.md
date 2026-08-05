@@ -1,12 +1,6 @@
 # An explainable machine learning consensus framework for robust estimations of environmental effects on population dynamics
 This repository contains scripts to implement explainable machine learning consensus framework - explanation discrepancy framework (EDF) for robust estimations of environmental effects on population dynamics.
 
-## Developers
-Anuradha Dhananjanie$^{1, 2}$ anuradha.dewage@hdr.qut.edu.au
-
-1. School of Mathematical Sciences, Faculty of Science, Queensland Univeristy of Technology, Australia
-2. Centre for Data Science, Queensland University of Technology, Australia
-
 ## Citation Information
 This code is provided as supplementary information to the paper,\
 Anuradha Dhananjanie, Helen Thompson, Julie Vercelloni, David J Warne. An explainable machine learning consensus framework for robust estimations of environmental effects on population dynamics. https://doi.org/10.64898/2026.05.10.724190.
