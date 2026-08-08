@@ -6,7 +6,16 @@ This code is provided as supplementary information to the paper,\
 Anuradha Dhananjanie, Helen Thompson, Julie Vercelloni, David J Warne. An explainable machine learning consensus framework for robust estimations of environmental effects on population dynamics. https://doi.org/10.64898/2026.05.10.724190.
 
 ## Contents
-
+The directory structure is as follows
+|-- R/
+    |-- synthetic_data_generation.R                                
+|-- Python
+    |-- RF.ipynb  
+    |-- BRT.ipynb                    
+    |-- MLP.ipynb                         
+    |-- GAM.ipynb                 
+    |-- EDM_SHAP.ipynb
+    
     
 ## Usage
 1. Start R and browse to the repository folder explainable_ML_consensus_framework/R
