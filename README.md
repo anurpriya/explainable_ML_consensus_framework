@@ -20,6 +20,7 @@ The directory structure is as follows
     
 ## Usage
 1. Start R and browse to the repository folder explainable_ML_consensus_framework/R
-3. Run synthetic_data_generation.R. This generates the required simulated data for the analysis. The dataset "only_cyc.csv" generated from this code contains the row disturbance values and the associated mean hard coral cover. This data set can also be found in the data folder
-4. synthos_figures.R produces plots  Spatial domain, Monitoring locations, Heat maps of row and weighted disturbances.
-5. Model construction, hyperparameter tuning, obtaining SHAP and LIME explanations are performed model-wise and python folder includes code for those implementations. 
+3. Run synthetic_data_generation.R. This generates the required simulated data for the analysis. The dataset "only_cyc.csv" generated from this code includes the row disturbance values and the associated mean hard coral cover (MHCC). This data set can also be found in the data folder.
+4. synthos_figures.R produces plots for spatial domain, monitoring locations, and heat maps of row and weighted disturbances.
+5. Model construction, hyperparameter tuning, obtaining SHAP and LIME explanations are performed model-wise, and the python folder includes code for those implementations.
+6. Once models are fitted and explanations are produced, the explanation discrepancy measure (EDM) is calculated using EDM_SHAP.ipynb.
