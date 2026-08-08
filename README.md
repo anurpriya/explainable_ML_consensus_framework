@@ -7,6 +7,7 @@ Anuradha Dhananjanie, Helen Thompson, Julie Vercelloni, David J Warne. An explai
 
 ## Contents
 The directory structure is as follows
+```text
 |-- R/
     |-- synthetic_data_generation.R                                
 |-- Python
@@ -16,6 +17,7 @@ The directory structure is as follows
     |-- GAM.ipynb                 
     |-- EDM_SHAP.ipynb
     
+```text
     
 ## Usage
 1. Start R and browse to the repository folder explainable_ML_consensus_framework/R
