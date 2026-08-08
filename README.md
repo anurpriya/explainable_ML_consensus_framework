@@ -7,8 +7,8 @@ Anuradha Dhananjanie, Helen Thompson, Julie Vercelloni, David J Warne. An explai
 
 ## Contents
 The directory structure is as follows
-```matlab
-|-- R/
+```text
+|-- R
     |-- synthetic_data_generation.R                                
 |-- Python
     |-- RF.ipynb  
