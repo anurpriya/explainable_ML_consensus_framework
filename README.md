@@ -15,9 +15,8 @@ The directory structure is as follows
     |-- BRT.ipynb                    
     |-- MLP.ipynb                         
     |-- GAM.ipynb                 
-    |-- EDM_SHAP.ipynb
-    
-```text
+    |-- EDM_SHAP.ipynb 
+```
     
 ## Usage
 1. Start R and browse to the repository folder explainable_ML_consensus_framework/R
