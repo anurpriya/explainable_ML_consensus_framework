@@ -22,7 +22,7 @@ The directory structure is as follows.
     
 ## Usage
 <ol>
-  <li>Run synthetic_data_generation.R. This generates the required simulated data for the analysis. The dataset "only_cyc.csv" generated from this code includes the row disturbance values and the associated mean hard coral cover (MHCC). This data set can also be found in the data folder.</li>
+  <li>Run synthetic_data_generation.R. This generates the required simulated data for the analysis. The dataset "only_cyc.csv" generated from this code includes the raw disturbance values and the associated mean hard coral cover (MHCC). This data set can also be found in the data folder.</li>
   <li>synthos_figures.R produces plots for spatial domain, monitoring locations, and heat maps of row and weighted disturbances.</li>
   <li>Model construction, hyperparameter tuning, obtaining SHAP and LIME explanations are performed model-wise, and the python folder includes code for those implementations.</li>
   <li>Once models are fitted and explanations are produced, the explanation discrepancy measure (EDM) is calculated using EDM_SHAP.ipynb.
