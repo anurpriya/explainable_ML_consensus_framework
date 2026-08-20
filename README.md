@@ -8,7 +8,7 @@ Anuradha Dhananjanie, Helen Thompson, Julie Vercelloni, David J Warne. An explai
 ## Vesion information
 
 ## Contents
-The directory structure is as follows
+The directory structure is as follows.
 ```text
 |-- R
     |-- synthetic_data_generation.R                                
