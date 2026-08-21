@@ -23,6 +23,10 @@ The directory structure is as follows.
     |-- EDM_SHAP.ipynb
     |-- EDM_LIME.ipynb
     |-- bootstrap_intervals.ipynb
+    |--time_series_obs_pred.ipynb
+    |--times_series_plot_observed_MHCC.ipynb
+    |--SHAP_discrepancy_vs_prediction_discrepancy.ipynb
+    |--projected_SHAP_discrepancy.ipynb
 ```
     
 ## Usage
