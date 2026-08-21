@@ -24,7 +24,8 @@ The directory structure is as follows.
 <ol>
   <li>Run synthetic_data_generation.R. This generates the required simulated data for the analysis. The dataset "only_cyc.csv" generated from this code includes the raw disturbance values and the associated mean hard coral cover (MHCC). This data set can also be found in the data folder.</li>
   <li>synthos_figures.R produces plots for spatial domain, monitoring locations, and heat maps of row and weighted disturbances.</li>
+  <li>heatmaps_three_examples.R produced the relevant heatmaps corresponding to the three representative examples of EDM analysis implemented with SHAP (Figure 7). pred_vs_obs_scatterplots.R plots the predicted versus observed MHCC. </li>
   <li>Model construction, hyperparameter tuning, obtaining SHAP and LIME explanations are performed model-wise, and the python folder includes code for those implementations.</li>
-  <li>Once models are fitted and explanations are produced, the explanation discrepancy measure (EDM) is calculated using EDM_SHAP.ipynb.
+  <li>Once models are fitted and explanations are produced, the explanation discrepancy measure (EDM) is calculated using EDM_SHAP.ipynb and EDM_LIME.ipynb for SHAP and LIME, respectively.
 </li>
 </ol>
