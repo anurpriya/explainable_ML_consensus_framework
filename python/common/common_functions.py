@@ -91,7 +91,7 @@ def get_lime_explanation(idx, training_data, feature_names, model):
         training_data=training_data.to_numpy(),
         feature_names=feature_names,
         mode="regression",
-        discretize_continuous=False,
+        # discretize_continuous=False,
         random_state=42
     )
 
@@ -101,9 +101,3 @@ def get_lime_explanation(idx, training_data, feature_names, model):
         num_features=12
     )
     return exp
-
-
-
-
-
-
