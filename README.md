@@ -5,7 +5,6 @@ This repository contains scripts to implement explainable machine learning conse
 This code is provided as supplementary information to the paper,\
 Anuradha Dhananjanie, Helen Thompson, Julie Vercelloni, David J Warne. An explainable machine learning consensus framework for robust estimations of environmental effects on population dynamics. https://doi.org/10.64898/2026.05.10.724190.
 
-## Vesion information
 
 ## Contents
 The directory structure is as follows.
